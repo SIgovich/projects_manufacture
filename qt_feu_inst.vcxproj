@@ -224,7 +224,7 @@
       <AdditionalIncludeDirectories>.;C:\Users\Public\work\converter\include;$(QTDIR)\include;$(QTDIR)\include\QtPrintSupport;$(QTDIR)\include\QtWidgets;$(QTDIR)\include\QtGui;$(QTDIR)\include\QtANGLE;$(QTDIR)\include\QtConcurrent;$(QTDIR)\include\QtCore;.\debug;$(QTDIR)\mkspecs\win32-msvc2015;.\GeneratedFiles;$(ConfigurationName);%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
       <AdditionalOptions>-Zc:strictStrings -Zc:throwingNew -w34100 -w34189 -w44996 -w44456 -w44457 -w44458 %(AdditionalOptions)</AdditionalOptions>
       <AssemblerListingLocation>debug\</AssemblerListingLocation>
-      <BrowseInformation>false</BrowseInformation>
+      <BrowseInformation>true</BrowseInformation>
       <DebugInformationFormat>ProgramDatabase</DebugInformationFormat>
       <DisableSpecificWarnings>4577;4467;%(DisableSpecificWarnings)</DisableSpecificWarnings>
       <ExceptionHandling>Sync</ExceptionHandling>
@@ -260,6 +260,9 @@
     <ResourceCompile>
       <PreprocessorDefinitions>_WINDOWS;UNICODE;WIN32;WIN64;QT_DEPRECATED_WARNINGS;QT_PRINTSUPPORT_LIB;QT_WIDGETS_LIB;QT_GUI_LIB;QT_CONCURRENT_LIB;QT_CORE_LIB;_DEBUG;%(PreprocessorDefinitions)</PreprocessorDefinitions>
     </ResourceCompile>
+    <Bscmake>
+      <PreserveSbr>true</PreserveSbr>
+    </Bscmake>
   </ItemDefinitionGroup>
   <ItemGroup>
     <ClCompile Include="abouthelp.cpp" />
